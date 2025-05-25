@@ -1,11 +1,44 @@
-# Tic-tac-Toe-game-
-This is a simple implementation of the Tic-Tac-Toe game in Java. It allows two players to play the game in the command line by taking turns entering the row and column where they want to place their mark. The game ends when one of the players wins or when the grid is full and no more moves can be made. The game checks for winning combinations in rows, columns, and diagonals, and prints the winner (if any) or a message indicating that the game ended in a tie.
 
-# Usage
-To run the game, clone the repository and compile the TicTacToe.java file with the following command:
+# Tic Tac Toe Game
+# Overview
+This project contains two versions of the classic Tic Tac Toe game: a console-based version and a graphical version using JavaFX. The console version allows two players to play Tic Tac Toe in a terminal, while the JavaFX version provides a graphical interface with AI for playing against the computer.
 
- javac TicTacToe.java
-Then, run the compiled class file with the following command:
+# Features
+# Console Version:
 
-# java TicTacToe
-This will start the game and prompt the first player to enter their move. The players will take turns entering the row and column where they want to place their mark (X or O). The game will continue until someone wins or there are no more empty spaces on the grid.
+Play Tic Tac Toe in the terminal.
+Two-player game without AI.
+JavaFX Version:
+
+Graphical user interface for Tic Tac Toe.
+Play against an AI opponent.
+Displays winning line on game over.
+Prerequisites
+JDK 11 or higher.
+JavaFX SDK (for the JavaFX version).
+Setup and Installation
+JavaFX SDK: Download the JavaFX SDK from OpenJFX and extract it to a known directory if you plan to run the JavaFX version.
+Clone the Repository: Use git clone <repository-url> to clone this repository to your local machine.
+Running the Applications
+Console Version
+Navigate to the directory containing the TicTacToe.java file.
+Compile the Java file using javac TicTacToe.java.
+Run the compiled class with java TicTacToe.
+Follow the on-screen instructions to play the game.
+JavaFX Version
+Ensure the JavaFX SDK is correctly set up in your IDE or on your system.
+Compile the TicTacToeFX.java file, making sure to include the JavaFX libraries in your classpath.
+Run the compiled class with the necessary VM options to include the JavaFX modules:
+--module-path "path/to/javafx-sdk/lib" --add-modules javafx.controls,javafx.fxml
+
+Follow the graphical interface to play against the AI.
+How to Play
+Console Version
+Players take turns entering the row and column numbers where they wish to place their mark (X or O).
+The game ends when one player has three of their marks in a row (horizontally, vertically, or diagonally) or when all squares are filled.
+JavaFX Version
+Click on the square where you wish to place your mark (X).
+The AI will make its move (O) after you.
+The game ends when one player wins or all squares are filled, with the winning line displayed.
+Contributing
+Contributions to enhance the games, add new features, or improve the AI algorithm are welcome. Please fork the repository, make your changes, and submit a pull request with a detailed description of your improvements.
